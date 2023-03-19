@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: object;
+    src: url(../fonts/ObjectSans-Bold.95f3c29b19601e33.woff);
+}
+@font-face {
+    font-family: noto;
+    src: url(../fonts/NotoSans-Regular.9bee85e7e67b0b47.ttf);
+}
+@font-face {
+    font-family: notobold;
+    src: url(../fonts/NotoSans-Bold.de08ec5b6cb82552.ttf);
+}
+@font-face {
+    font-family: blizzard;
+    src: url(../fonts/blizzard-400-normal.woff);
+}
+@font-face {
+    font-family: blizzard700;
+    src: url(../fonts/blizzard-700-normal.woff);
+}

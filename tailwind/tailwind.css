@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        --body: #15171E;
+        --navhov:#23252B;
+        --menuhov:#303237;
+        --menutext:#ffffffb8;
+        --dropmenu:#1A1C23;
+        --dropmenuhov:#272930ca;
+        --menuborder:#148EFF;
+        --menulight:#69706e;
+    }
+}
