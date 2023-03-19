@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html", './node_modules/tw-elements/dist/js/**/*.js'],
   // darkMode:"class",
   theme: { 
     extend: {},
@@ -12,7 +12,16 @@ module.exports = {
       dropmenu: "var(--dropmenu)",
       dropmenuhov: "var(--dropmenuhov)",
       menuborder: "var(--menuborder)",
-      menulight: "var(--menulight)"
+      menulight: "var(--menulight)",
+      bluebut: "var(--bluebut)",
+      blueline: "var(--blueline)",
+      card: "var(--card)",
+      cardtext: "var(--cardtext)",
+      cardtext1: "var(--cardtext1)",
+      cardtext2: "var(--cardtext2)",
+      cardhov: "var(--cardhov)",
+      cardgreen: "var(--cardgreen)",
+      cardred: "var(--cardred)"
     },
     fontFamily:{
       "object":"object",
@@ -22,5 +31,5 @@ module.exports = {
       "blizzard700":"blizzard700"
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('tw-elements/dist/plugin')],
 }

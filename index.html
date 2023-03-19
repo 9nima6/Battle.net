@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/setting.css">
     <title>Battle.net</title>
 </head>
-<body class="p-2 lg:p-4 bg-body">
+<body class="p-2 lg:p-4 bg-body h-[5000px]">
     <!-- initialize header -->
     <header>
         <div class="w-full">
@@ -88,15 +88,15 @@
     </header>
     <!-- end header -->
     <!-- initialize sticky menu -->
-    <div class="sticky flex flex-row justify-center items-center gap-x-2 mt-3">
+    <div class="sticky top-0 bg-body py-3 flex flex-row justify-center items-center gap-x-2 mt-3 z-10">
         <!-- mainmenu -->
-        <div class="hidden lg:block">
+        <div class="hidden lg:block grow">
             <div class="flex flex-row justify-start items-center bg-navhov rounded font-notobold">
                 <div class="group relative dropdown dropdown-hover after:content-[''] after:bg-menuborder after:absolute after:bottom-0 after:left-[50%] hover:after:pr-28 hover:after:pt-[2px] hover:after:left-0 after:transition-all after:duration-200 after:ease-linear">
                     <label tabindex="0" class="btn bg-transparent hover:bg-menuhov capitalize text-menutext text-sm">warcraft&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
                         <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
                     </svg></label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center border-2 border-menuhov border-solid ">
                     <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
                         <div><svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" part="icon blz-icon">
                             <style type="text/css">
@@ -220,7 +220,7 @@
                     <label tabindex="0" class="btn bg-transparent hover:bg-menuhov text-menutext capitalize text-sm">Call&nbsp;of&nbsp;Duty&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
                         <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
                     </svg></label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center border-2 border-menuhov border-solid">
                     <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
                         <div><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 21.6" style="enable-background:new 0 0 48 21.6;" xml:space="preserve" part="icon blz-icon">
                             <style type="text/css">
@@ -2195,7 +2195,7 @@
                     <label tabindex="0" class="btn bg-transparent hover:bg-menuhov text-menutext capitalize text-sm">Diablo&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
                         <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
                     </svg></label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center border-2 border-menuhov border-solid">
                     <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
                         <div><svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" part="icon blz-icon">
                             <style type="text/css">
@@ -2258,7 +2258,7 @@
                     <label tabindex="0" class="btn bg-transparent hover:bg-menuhov capitalize text-menutext text-sm">OverWatch&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
                         <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
                     </svg></label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center border-2 border-menuhov border-solid">
                     <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
                         <div><svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" part="icon blz-icon">
                             <style type="text/css">
@@ -2382,7 +2382,7 @@
                     <label tabindex="0" class="btn bg-transparent hover:bg-menuhov text-menutext capitalize text-sm">StarCraft&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
                         <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
                     </svg></label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center border-2 border-menuhov border-solid">
                     <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
                         <div><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 21.6" style="enable-background:new 0 0 48 21.6;" xml:space="preserve" part="icon blz-icon">
                             <style type="text/css">
@@ -4357,7 +4357,7 @@
                     <label tabindex="0" class="btn bg-transparent hover:bg-menuhov text-menutext capitalize text-sm">More&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
                         <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
                     </svg></label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center border-2 border-menuhov border-solid">
                     <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
                         <div><svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" part="icon blz-icon">
                             <style type="text/css">
@@ -4419,15 +4419,355 @@
             </div>
         </div>
         <!-- mainmenu -->
-        <div class="relative group bg-navhov grow lg:grow-0">
-            <input class="bg-navhov lg:placeholder:text-navhov xl:placeholder:text-menulight text-base rounded p-3 pl-11 group-hover:bg-menuhov group-hover:placeholder:text-[#fff]" type="text" placeholder="Search Shop">
+        <!-- searchbox -->
+        <div class="relative group bg-navhov grow lg:grow-0 rounded">
+            <input class="bg-navhov lg:placeholder:text-navhov xl:placeholder:text-menulight text-base rounded p-3 pl-11 group-hover:bg-menuhov group-hover:placeholder:text-[#fff] font-medium" type="text" placeholder="Search Shop">
             <svg class="absolute left-[7px] top-[15px]" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
                 <path d="M14.05 15.463a7.5 7.5 0 1 1 1.414-1.414l5.243 5.244a1 1 0 0 1-1.414 1.414l-5.244-5.244ZM15 9.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0Z"></path>
               </svg>
         </div>
-
+        <!-- searchbox -->
+        <!-- balance -->
+        <div class="hidden lg:block group relative rounded bg-navhov dropdown dropdown-hover after:content-[''] after:bg-menuborder after:absolute after:bottom-0 after:left-[50%] hover:after:pr-[167px] hover:after:pt-[2px] hover:after:left-0 after:transition-all after:duration-200 after:ease-linear">
+            <label tabindex="0" class="btn bg-transparent hover:bg-menuhov capitalize text-menutext text-sm">Battle.net&nbsp;Balance&nbsp;<svg class="meka-menu-drop-down-label__icon group-hover:rotate-180 transition-all duration-200 ease-linear" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+                <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+            </svg></label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-dropmenu rounded flex flex-col items-start justify-center right-0 border-2 border-menuhov border-solid">
+            <li class="hover:bg-dropmenuhov w-full hover:text-[#fff]"><a class="flex flex-row justify-start items-center">
+                <div><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm0 2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"></path>
+                    <path d="M11.5 7a.5.5 0 0 0-.5.5V11H7.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H11v3.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V13h3.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H13V7.5a.5.5 0 0 0-.5-.5h-1Z"></path>
+                  </svg></div>
+                <div class="flex flex-col items-start justify-center">
+                    <p class="text-sm">Add&nbsp;Balance</p>
+                </div>
+            </a></li>
+            <li class="hover:bg-dropmenuhov w-full hover:text-[#fff]"><a class="flex flex-row justify-start items-center">
+                <div><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M16.066 7.245a2.75 2.75 0 0 0 1.006-3.756c-.325-.563-.803-1.1-1.489-1.34-.711-.247-1.485-.119-2.268.333-.295.17-.528.432-.708.688-.186.265-.35.574-.49.895a8.867 8.867 0 0 0-.535 1.715 8.953 8.953 0 0 0-1.557-1.494 5.158 5.158 0 0 0-.87-.53c-.285-.132-.618-.242-.958-.242-.904 0-1.638.276-2.13.846-.475.55-.62 1.254-.62 1.904 0 .659.23 1.263.616 1.736H5a2 2 0 0 0-2 2v3.53a.5.5 0 0 0 .5.5H4V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4.97h.5a.5.5 0 0 0 .5-.5V10a2 2 0 0 0-2-2h-4.242l1.308-.755Zm-.293-3.006a1.25 1.25 0 0 1-.457 1.707l-2.383 1.376a4.312 4.312 0 0 1 .062-.933 7.452 7.452 0 0 1 .498-1.725 3.67 3.67 0 0 1 .342-.632c.118-.168.2-.234.23-.25.517-.299.833-.283 1.025-.216.217.076.456.28.683.673ZM6.947 6.264c0-.454.104-.75.255-.924.132-.153.398-.326.995-.326.034 0 .139.016.325.102.177.083.386.21.612.377.453.334.923.79 1.293 1.244.253.311.422.578.52.777h-2.75c-.69 0-1.25-.56-1.25-1.25ZM18 19h-5v-4.899h5V19Zm1-6.97h-6V10h6v2.03Zm-8 0H5V10h6v2.03ZM11 19H6v-4.899h5V19Z"></path>
+                  </svg></div>
+                <div class="flex flex-col items-start justify-center">
+                    <p class="text-sm">Gift&nbsp;Balance</p>
+                </div>
+            </a></li>
+            <li class="hover:bg-dropmenuhov w-full hover:text-[#fff]"><a class="flex flex-row justify-start items-center">
+                <div><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M5.001 12a7 7 0 1 1 2.725 5.544.528.528 0 0 0-.695.032l-.713.713a.478.478 0 0 0 .027.712A9 9 0 1 0 3.001 12H1.208a.5.5 0 0 0-.354.854l2.793 2.792a.5.5 0 0 0 .707 0l2.793-2.792A.5.5 0 0 0 6.794 12H5Z"></path>
+                    <path d="M12.001 7a1 1 0 0 0-1 1v4.036a1 1 0 0 0 .5.91l3.465 2a1 1 0 0 0 1-1.732l-2.965-1.712V8a1 1 0 0 0-1-1Z"></path>
+                  </svg></div>
+                <div class="flex flex-col items-start justify-center">
+                    <p class="text-sm">Balance&nbsp;History</p>
+                </div>
+                <div class="ml-16"><svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M13.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3.086l-6.293 6.293a1 1 0 1 0 1.414 1.414L18 7.414V10.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-6Z"></path>
+                    <path d="M8 7h4.08l-2 2H8a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2v-2.08l2-2V16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-5a4 4 0 0 1 4-4Z"></path>
+                  </svg></div>
+            </a></li>
+            <li class="hover:bg-dropmenuhov w-full"><a class="flex flex-row justify-start items-center">
+                <div><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.31 3.31 0 0 0-.47.248.518.518 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102ZM11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Z"></path>
+                    <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0Z"></path>
+                  </svg></div>
+                <div class="flex flex-col items-start justify-center">
+                    <p class="text-sm">Balance&nbsp;Help</p>
+                </div>
+                <div class="ml-20"><svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M13.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3.086l-6.293 6.293a1 1 0 1 0 1.414 1.414L18 7.414V10.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-6Z"></path>
+                    <path d="M8 7h4.08l-2 2H8a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2v-2.08l2-2V16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-5a4 4 0 0 1 4-4Z"></path>
+                  </svg></div>
+            </a></li>
+            </ul>
+        </div>
+        <!--end balance -->
+        <!-- lightmode -->
+        <label class="swap swap-rotate">
+  
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+            
+            <!-- sun icon -->
+            <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+            
+            <!-- moon icon -->
+            <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+            
+          </label>
+        <!--end lightmode -->
     </div>
     <!-- end sticky menu -->
+    <!-- initialize carousel xxl -->
+    <div class="hidden lg:block h-[390px]">
+        <div class="group carousel w-full mt-4 rounded h-[inherit]">
+            <div id="slide1" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car1.webp" class="w-full h-[inherit] bg-cover" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide2" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-36 top-7">
+                <div><img src="./images/car1ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Hell awaits. Pre-purchase and get Open Beta Early Access now through March 19</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">Pre-Purchase</button></div>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car2.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide3" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-36 top-9">
+                <div><img src="./images/car2ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Up to 35% off through March 22</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">buy now</button></div>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car3.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide4" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-36 top-4">
+                <div><img src="./images/car3ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Get ready to jam with the Mega Bundle for the new Expansion!</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">Pre-Purchase</button></div>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car4.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-squar hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide5" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-36 top-20">
+                <div><img src="./images/car4ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Event now live</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">shop the bundles</button></div>
+              </div>
+            </div>
+            <div id="slide5" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car5.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide1" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-36 top-20">
+                <div><img src="./images/car5ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">The Dragon Isles are open!</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">buy now</button></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- end carousel xxl-->
+    <!-- initialize carousel lg-->
+    <div class="block lg:hidden h-[480px]">
+        <div class="group carousel w-full mt-4 rounded h-[inherit]">
+            <div id="slide2.1" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car2.1.webp" class="w-full h-[inherit] bg-cover" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2.4" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide2.2" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-72 bottom-5">
+                <div><img src="./images/car1ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Hell awaits. Pre-purchase and get Open Beta Early Access now through March 19</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">Pre-Purchase</button></div>
+              </div>
+            </div> 
+            <div id="slide2.2" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car2.2.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2.1" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide2.3" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-72 bottom-3">
+                <div><img src="./images/car2ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Up to 35% off through March 22</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">buy now</button></div>
+              </div>
+            </div> 
+            <div id="slide2.3" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car2.3.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2.2" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide2.4" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-72 bottom-3">
+                <div><img src="./images/car3ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Get ready to jam with the Mega Bundle for the new Expansion!</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">Pre-Purchase</button></div>
+              </div>
+            </div> 
+            <div id="slide2.4" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car2.4.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2.3" class="btn btn-squar hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide2.5" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-72 bottom-3">
+                <div><img src="./images/car4ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">Event now live</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">shop the bundles</button></div>
+              </div>
+            </div>
+            <div id="slide2.5" class="carousel-item relative w-full h-[inherit]">
+              <img src="./images/car2.5.webp" class="w-full h-[inherit]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2.4" class="btn btn-square hidden group-hover:block pt-4">❮</a> 
+                <a href="#slide2.1" class="btn btn-square hidden group-hover:block pt-4">❯</a>
+              </div>
+              <div class="absolute flex flex-col items-center content-center w-[320px] left-72 bottom-3">
+                <div><img src="./images/car5ad.webp" alt="ad1"></div>
+                <div><p class="text-[#fff] text-xl font-object text-center px-5">The Dragon Isles are open!</p></div>
+                <div><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center mt-3 hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">buy now</button></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- end carousel lg-->
+    <!-- gamelist -->
+    <div class="bg-navhov flex flex-row justify-center items-center flex-wrap rounded p-5 mt-4 gap-7">
+        <div>
+            <p class="font-object text-[#fff] text-sm">GAMES</p>
+        </div>
+        <div><img src="./images/1.png" alt="1" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/2.png" alt="2" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/3.png" alt="3" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/5.png" alt="5" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/6.png" alt="6" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/10.png" alt="10" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/11.png" alt="11" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/12.png" alt="12" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/13.png" alt="13" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/15.png" alt="15" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/16.png" alt="16" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/17.png" alt="17" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/18.png" alt="18" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/19.png" alt="19" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/20.png" alt="20" class="w-[40px] cursor-pointer hover:scale-125"></div>
+        <div><img src="./images/21.png" alt="21" class="w-[40px] cursor-pointer hover:scale-125"></div>
+    </div>
+    <!--end gamelist -->
+    <!-- recommended -->
+    <div class="mt-16">
+        <div><p class="font-object text-2xl text-[#fff] pl-3">Recommended</p></div>
+        <div class="flex flex-row flex-wrap justify-center items-center gap-2 gap-y-4 mt-3">
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov before:content-['BETA'] before:text-[#fff] before:absolute before:top-2 before:left-2 before:bg-cardred before:rounded before:px-2 before:py-1 before:text-xs before:font-noto before:font-bold">
+                <figure><img src="./images/card1.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">DIABLO IV</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® IV: Ultimate Edition</p>
+                  <p class="font-noto text-sm text-cardtext2">Pre-purchase now for Early Access to the Open Beta. Early access begins March 17</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-7 font-bold">$99.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card2.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Dragonflight</p>
+                  <p class="font-noto text-xs text-cardtext">Massively Multiplayer RPG</p>
+                  
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $49.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card3.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Tavern Pass</p>
+                  <p class="font-noto text-sm text-cardtext2">Available through April 10, 2023</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-14 font-bold">$19.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card4.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Modern Warfare II</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Modern Warfare® II - Vault Edition</p>
+                  <Play class="font-noto text-sm text-cardtext2">Play Multiplayer for FREE, until March 20th.</p>
+                  <p class="font-noto text-xs text-cardtext">Action Shooter</p>
+                </div>
+                <div class="flex flex-row items-start justify-between px-5 mt-9 mb-4"><p class="font-noto text-base text-cardgreen pt-3 font-bold leading-5">$74.99</p><div class="bg-cardgreen rounded w-14 h-10 p-2"><p class="font-noto text-[#000] text-base">-25%</p></div></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card5.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Packs</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $2.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card6.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag6.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo II: Resurrected</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo II: Resurrected™</p>
+                  <p class="font-noto text-sm text-cardtext2">Evil is Resurrected</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card7.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Warzone 2</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Warzone 2.0</p>
+                  <p class="font-noto text-sm text-cardtext2">Free for everyone</p>
+                  <p class="font-noto text-xs text-cardtext">Free-To-Play Action Shooter</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">Play For Free</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card8.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Special Subscription Offer</p>
+                  <p class="font-noto text-sm text-cardtext2">Includes access to World of Warcraft and Wrath of the Lich King Classic!</p>
+                  <p class="font-noto text-xs text-cardtext">Subscriptions</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-4">Learn More</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card9.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo III</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® III: Eternal Collection</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-12">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card10.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">Hearthstone®</p>
+                  <p class="font-noto text-xs text-cardtext">Strategy Card Game</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-20">Play For Free</p></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!--end recommended -->
 
+    <script>
+        // lightmode
+        document.querySelector("svg.swap-on").addEventListener("click",function(){
+            document.firstElementChild.setAttribute("data-theme","valentine")
+        })
+        document.querySelector("svg.swap-off").addEventListener("click",function(){
+            document.firstElementChild.removeAttribute("data-theme","valentine")
+        })
+        // end lightmode
+    </script>
 </body>
 </html>
