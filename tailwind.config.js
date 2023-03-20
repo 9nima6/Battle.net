@@ -21,7 +21,10 @@ module.exports = {
       cardtext2: "var(--cardtext2)",
       cardhov: "var(--cardhov)",
       cardgreen: "var(--cardgreen)",
-      cardred: "var(--cardred)"
+      cardred: "var(--cardred)",
+      divbut: "var(--divbut)",
+      graybut: "var(--graybut)",
+      grayline: "var(--grayline)"
     },
     fontFamily:{
       "object":"object",

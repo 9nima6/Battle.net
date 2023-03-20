@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/setting.css">
     <title>Battle.net</title>
 </head>
-<body class="p-2 lg:p-4 bg-body h-[5000px]">
+<body class="p-2 lg:p-4 bg-body">
     <!-- initialize header -->
-    <header>
+    <header id="up">
         <div class="w-full">
             <nav class="w-full flex flex-row justify-between items-center">
                 <!-- appear in lg -->
@@ -63,7 +63,7 @@
                               </svg></span>
                             <a class="block w-[auto] no-underline capitalize text-[#fff]" href="#">support</a>
                         </li>
-                        <li class="w-[auto] flex flex-row justify-center items-center p-3 gap-2 rounded hover:bg-navhov hover:text-[#fff] cursor-pointer">
+                        <li class="relative group w-[auto] flex flex-row justify-center items-center p-3 gap-2 rounded hover:bg-navhov hover:text-[#fff] cursor-pointer">
                             <span><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
                                 <path d="M15.75 9.75a3.733 3.733 0 0 1-1.433 2.949A3.734 3.734 0 0 1 12 13.5a3.734 3.734 0 0 1-3.023-1.53 3.75 3.75 0 1 1 6.773-2.22Zm-5.5 0a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 0 0-3.5 0Z"></path>
                                 <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.047-4.73c.148.193.28.393.393.595A7.972 7.972 0 0 1 12 20a7.972 7.972 0 0 1-5.445-2.139l.005.005c.114-.202.245-.403.393-.596.442-.575.92-.943 1.36-1.13a7.366 7.366 0 0 0 3.687.992c1.34 0 2.594-.364 3.687-.993.44.188.919.556 1.36 1.13Zm-8.835-3.194c-1.188.268-2.237 1.115-2.99 2.172H5.22a8 8 0 1 1 13.56 0c-.755-1.056-1.804-1.904-2.992-2.172a3.627 3.627 0 0 0-.487-.075c-.947.715-2.082 1.131-3.3 1.131-1.22 0-2.355-.416-3.302-1.131-.164.014-.327.04-.487.075Z"></path>
@@ -71,6 +71,30 @@
                             <a class="block w-[auto] no-underline capitalize" href="#"><span class="flex flex-row justify-center items-center gap-1"><p class="text-[#fff]">account</p><svg width="12px" height="12px" xmlns="http://www.w3.org/2000/svg" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" role="presentation" fill="none" stroke-width="2px" viewBox="0 0 24 24" part="icon blz-icon">
                                 <path d="M6 9L12 15L18 9"></path>
                               </svg></span></a>
+                              <!-- dropdown -->
+                              <div class="hidden group-hover:block absolute right-0 top-12 z-50">
+                                <ul class="flex flex-col items-start justify-center bg-body w-80 pt-5  rounded">
+                                    <li class="m-3 p-3 bg-divbut w-full"><button class="btn w-full bg-bluebut rounded text-[#fff] text-xl font-object text-center hover:outline hover:outline-2 hover:outline-blueline hover:bg-bluebut capitalize px-16">log in</button></li>
+                                    <li class="font-noto text-cardtext text-base capitalize mx-3 p-3 hover:bg-navhov hover:text-[#fff] w-full rounded"><a href="#" class="flex gap-2"><span><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                                        <path d="M11.675 13.771a6.488 6.488 0 0 0-.954 2.042 6.833 6.833 0 0 1-3.048-.864c-.335.163-.705.457-1.057.916-.094.123-.18.248-.257.375a6.97 6.97 0 0 0 4.159 1.744c.052.71.218 1.388.48 2.016a9 9 0 1 1 8.974-8.282A6.452 6.452 0 0 0 18 11.076V11a7 7 0 1 0-12.973 3.651c.762-.995 1.821-1.75 3.002-1.85.853.643 1.874 1.018 2.971 1.018.229 0 .454-.016.675-.048Z"></path>
+                                        <path d="M14.375 8.975a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0Zm-2 0a1.375 1.375 0 1 1-2.75 0 1.375 1.375 0 0 1 2.75 0ZM16.455 13h1.093a.5.5 0 0 1 .492.412l.167.936a.55.55 0 0 0 .288.381c.098.052.191.11.282.171a.55.55 0 0 0 .49.076l1.051-.368a.5.5 0 0 1 .59.209l.518.837a.5.5 0 0 1-.12.659l-.943.725a.55.55 0 0 0-.205.445v.058a.55.55 0 0 0 .205.445l.943.726a.5.5 0 0 1 .12.659l-.516.837a.5.5 0 0 1-.591.209l-1.053-.369a.55.55 0 0 0-.49.076c-.09.062-.184.119-.282.171a.55.55 0 0 0-.289.382l-.166.935a.5.5 0 0 1-.493.412h-1.093a.5.5 0 0 1-.492-.412l-.167-.935a.55.55 0 0 0-.288-.382 3.132 3.132 0 0 1-.282-.171.55.55 0 0 0-.49-.075l-1.05.367a.5.5 0 0 1-.591-.209l-.517-.837a.5.5 0 0 1 .12-.659l.94-.724a.55.55 0 0 0 .206-.445v-.06a.55.55 0 0 0-.205-.445l-.942-.725a.5.5 0 0 1-.12-.659l.517-.837a.5.5 0 0 1 .59-.21l1.052.37a.55.55 0 0 0 .49-.076c.09-.062.185-.12.283-.172a.55.55 0 0 0 .29-.382l.166-.934a.5.5 0 0 1 .492-.412ZM17 19.09a1.58 1.58 0 1 0 0-3.157 1.58 1.58 0 0 0 0 3.158Z"></path>
+                                      </svg></span><p>account settings</p></a></li>
+                                    <li class="font-noto text-cardtext text-base capitalize mx-3 p-3 hover:bg-navhov hover:text-[#fff] w-full rounded"><a href="#" class="flex gap-2"><span><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                                        <path d="M10.55 20.03 12 21.35l1.45-1.31.04-.036C18.616 15.344 22 12.27 22 8.5 22 5.42 19.58 3 16.5 3c-1.116 0-2.204.745-3.128 1.617A18.606 18.606 0 0 0 12 6.09c-.39-.459-.856-.986-1.372-1.473C9.704 3.745 8.616 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.777 3.394 6.855 8.537 11.518l.013.012Zm1.557-1.472-.002.002-.1.09-.109-.099-.003-.003c-2.615-2.371-4.623-4.198-6.001-5.883C4.536 11.008 4 9.733 4 8.5 4 6.525 5.525 5 7.5 5c.197 0 .607.121 1.25.631.609.484 1.193 1.129 1.727 1.756L12 9.175l1.523-1.788c.534-.627 1.118-1.272 1.727-1.756.643-.51 1.053-.631 1.25-.631C18.475 5 20 6.525 20 8.5c0 1.233-.537 2.508-1.892 4.167-1.379 1.686-3.386 3.515-6 5.89Z"></path>
+                                      </svg></span><p>wish list</p></a></li>
+                                    <li class="font-noto text-cardtext text-base capitalize mx-3 p-3 hover:bg-navhov hover:text-[#fff] w-full rounded"><a href="#" class="flex gap-2"><span><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                                        <path d="M2 2h2v16H2V2Zm3 20v-2H3v2h2Zm4-2H7v2h2v-2Zm2 0h5v2h-5v-2Zm10 0h-3v2h3v-2Zm1-18h-3v16h3V2Zm-6 0h1v16h-1V2Zm-2 0h-2v16h2V2ZM6 2h4v16H6V2Z"></path>
+                                      </svg></span><p>redeem code</p></a></li>
+                                    <li class="font-noto text-cardtext text-base capitalize mx-3 p-3 hover:bg-navhov hover:text-[#fff] w-full rounded"><a href="#" class="flex gap-2"><span><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon blz-icon">
+                                        <path d="M13.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H15v16h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H17v-3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3V4h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-5ZM17 9h3v6h-3V9ZM4 7h9v2H4v6h9v2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                                      </svg></span><p>change battleTag</p></a></li>
+                                    <li class="bg-dropmenu font-noto text-cardtext text-base capitalize p-5 hover:bg-navhov hover:text-[#fff] w-full rounded"><a href="#" class="flex gap-2"><span><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+                                        <path d="M3.114 20.31 4 15 15.585 3.414a2 2 0 0 1 2.828 0l2.172 2.172a2 2 0 0 1 0 2.828L9 20l-5.31.885a.5.5 0 0 1-.575-.576Zm4.924-2.177 8.34-8.34-2.172-2.172-8.34 8.34-.434 2.606 2.606-.434Zm9.754-9.754L19.171 7l-2.172-2.172-1.378 1.38 2.171 2.17Z"></path>
+                                      </svg></span><p>create account</p></a></li>
+                                </ul>
+                              </div>
+                              <!--end dropdown -->
+
                         </li>
                     </ul>
                 </div>
@@ -88,7 +112,7 @@
     </header>
     <!-- end header -->
     <!-- initialize sticky menu -->
-    <div class="sticky top-0 bg-body py-3 flex flex-row justify-center items-center gap-x-2 mt-3 z-10">
+    <div class="sticky top-0 bg-body py-3 flex flex-row justify-center items-center gap-x-2 mt-3 z-40">
         <!-- mainmenu -->
         <div class="hidden lg:block grow">
             <div class="flex flex-row justify-start items-center bg-navhov rounded font-notobold">
@@ -4758,7 +4782,385 @@
         </div>
     </div>
     <!--end recommended -->
+    <!--initialize diablo iv xxl -->
+    <div class="mt-16 hidden lg:block">
+        <div><p class="font-object text-2xl text-[#fff] pl-3">Diablo IV Rewards</p></div>
+        <div class="relative mt-5 w-full">
+            <div class="w-3/5 absolute left-0 top-0 z-10"><img src="./images/iv.webp" alt="1"></div>
+            <div class="w-[1090px] absolute right-0 top-0 h-[503px] bg-gradient-to-r from-transparent via-dropmenu to-dropmenu z-20">
+                <div class="absolute right-14 top-36 flex flex-col items-start justify-center gap-3 w-[607px]">
+                    <div class="flex gap-3"><span><img src="./images/1.png" alt="1" class="w-[24px] h-[24px]"></span><p class="font-object text-[#fff] text-lg">Play the Open Beta, lead the pack</p></div>
+                    <p class="font-noto text-sm text-cardtext">Be first through the gates of hell and earn a cache of unique rewards along the way. Play during the Open Beta and Early Access weekends to collect <span class="font-bold">three Open Beta rewards</span> and showcase your wanderer’s prowess. If you unlock these rewards, you will receive them once Diablo IV launches.</p>
+                    <ul class="list-disc pl-10">
+                        <li class="font-noto text-sm text-cardtext"><span class="italic">Initial Casualty</span> Title: earned by <span class="font-bold">reaching Kyovashad</span> with one character.</li>
+                        <li class="font-noto text-sm text-cardtext"><span class="italic">Early Voyager </span> Title: earned by<span class="font-bold"> reaching Level 20</span>on one character.</li>
+                        <li class="font-noto text-sm text-cardtext"><span class="font-bold">Beta Wolf Pack Cosmetic Item:</span> earned by reaching Level 20 on one character.</li>
+                    </ul>
+                    <button class="font-object text-[#fff] text-base capitalize bg-graybut px-7 py-2 rounded mt-4 hover:outline hover:outline-2 hover:outline-grayline">coming soon</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--end diablo iv xxl-->
+    <!--initialize diablo iv lg-->
+    <div class="mt-16 block lg:hidden">
+        <div><p class="font-object text-2xl text-[#fff] pl-3">Diablo IV Rewards</p></div>
+        <div class="relative mt-5 w-full">
+            <div class="w-full absolute top-0 z-10"><img src="./images/iv.webp" alt="1"></div>
+            <div class="w-full absolute top-0 h-[750px] bg-gradient-to-b from-transparent via-dropmenu to-dropmenu z-20">
+                <div class="absolute left-5 top-96 pr-10 flex flex-col items-start justify-center gap-3 w-full">
+                    <div class="flex gap-3"><span><img src="./images/1.png" alt="1" class="w-[24px] h-[24px]"></span><p class="font-object text-[#fff] text-lg">Play the Open Beta, lead the pack</p></div>
+                    <p class="font-noto text-sm text-cardtext">Be first through the gates of hell and earn a cache of unique rewards along the way. Play during the Open Beta and Early Access weekends to collect <span class="font-bold">three Open Beta rewards</span> and showcase your wanderer’s prowess. If you unlock these rewards, you will receive them once Diablo IV launches.</p>
+                    <ul class="list-disc pl-10">
+                        <li class="font-noto text-sm text-cardtext"><span class="italic">Initial Casualty</span> Title: earned by <span class="font-bold">reaching Kyovashad</span> with one character.</li>
+                        <li class="font-noto text-sm text-cardtext"><span class="italic">Early Voyager </span> Title: earned by<span class="font-bold"> reaching Level 20</span>on one character.</li>
+                        <li class="font-noto text-sm text-cardtext"><span class="font-bold">Beta Wolf Pack Cosmetic Item:</span> earned by reaching Level 20 on one character.</li>
+                    </ul>
+                    <button class="font-object text-[#fff] text-base capitalize bg-graybut px-7 py-2 rounded mt-4 hover:outline hover:outline-2 hover:outline-grayline">coming soon</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--end diablo iv lg-->
+    <!-- initialize featured -->
+    <div class="mt-[800px] lg:mt-[550px]">
+        <div><p class="font-object text-2xl text-[#fff] pl-3">Featured</p></div>
+        <div class="flex flex-row flex-wrap justify-center items-center gap-2 gap-y-4 mt-3">
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov before:content-['BETA'] before:text-[#fff] before:absolute before:top-2 before:left-2 before:bg-cardred before:rounded before:px-2 before:py-1 before:text-xs before:font-noto before:font-bold">
+                <figure><img src="./images/card1.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">DIABLO IV</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® IV: Ultimate Edition</p>
+                  <p class="font-noto text-sm text-cardtext2">Pre-purchase now for Early Access to the Open Beta. Early access begins March 17</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-7 font-bold">$99.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card2.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Dragonflight</p>
+                  <p class="font-noto text-xs text-cardtext">Massively Multiplayer RPG</p>
+                  
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $49.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card3.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Tavern Pass</p>
+                  <p class="font-noto text-sm text-cardtext2">Available through April 10, 2023</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-14 font-bold">$19.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card4.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Modern Warfare II</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Modern Warfare® II - Vault Edition</p>
+                  <Play class="font-noto text-sm text-cardtext2">Play Multiplayer for FREE, until March 20th.</p>
+                  <p class="font-noto text-xs text-cardtext">Action Shooter</p>
+                </div>
+                <div class="flex flex-row items-start justify-between px-5 mt-9 mb-4"><p class="font-noto text-base text-cardgreen pt-3 font-bold leading-5">$74.99</p><div class="bg-cardgreen rounded w-14 h-10 p-2"><p class="font-noto text-[#000] text-base">-25%</p></div></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card5.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Packs</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $2.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card6.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag6.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo II: Resurrected</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo II: Resurrected™</p>
+                  <p class="font-noto text-sm text-cardtext2">Evil is Resurrected</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card7.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Warzone 2</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Warzone 2.0</p>
+                  <p class="font-noto text-sm text-cardtext2">Free for everyone</p>
+                  <p class="font-noto text-xs text-cardtext">Free-To-Play Action Shooter</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">Play For Free</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card8.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Special Subscription Offer</p>
+                  <p class="font-noto text-sm text-cardtext2">Includes access to World of Warcraft and Wrath of the Lich King Classic!</p>
+                  <p class="font-noto text-xs text-cardtext">Subscriptions</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-4">Learn More</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card9.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo III</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® III: Eternal Collection</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-12">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card10.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">Hearthstone®</p>
+                  <p class="font-noto text-xs text-cardtext">Strategy Card Game</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-20">Play For Free</p></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- end featured -->
+    <!-- initialize trending now -->
+    <div class="mt-16">
+        <div><p class="font-object text-2xl text-[#fff] pl-3">Trending Now</p></div>
+        <div class="flex flex-row flex-wrap justify-center items-center gap-2 gap-y-4 mt-3">
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov before:content-['BETA'] before:text-[#fff] before:absolute before:top-2 before:left-2 before:bg-cardred before:rounded before:px-2 before:py-1 before:text-xs before:font-noto before:font-bold">
+                <figure><img src="./images/card1.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">DIABLO IV</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® IV: Ultimate Edition</p>
+                  <p class="font-noto text-sm text-cardtext2">Pre-purchase now for Early Access to the Open Beta. Early access begins March 17</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-7 font-bold">$99.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card2.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Dragonflight</p>
+                  <p class="font-noto text-xs text-cardtext">Massively Multiplayer RPG</p>
+                  
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $49.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card3.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Tavern Pass</p>
+                  <p class="font-noto text-sm text-cardtext2">Available through April 10, 2023</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-14 font-bold">$19.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card4.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Modern Warfare II</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Modern Warfare® II - Vault Edition</p>
+                  <Play class="font-noto text-sm text-cardtext2">Play Multiplayer for FREE, until March 20th.</p>
+                  <p class="font-noto text-xs text-cardtext">Action Shooter</p>
+                </div>
+                <div class="flex flex-row items-start justify-between px-5 mt-9 mb-4"><p class="font-noto text-base text-cardgreen pt-3 font-bold leading-5">$74.99</p><div class="bg-cardgreen rounded w-14 h-10 p-2"><p class="font-noto text-[#000] text-base">-25%</p></div></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card5.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Packs</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $2.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card6.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag6.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo II: Resurrected</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo II: Resurrected™</p>
+                  <p class="font-noto text-sm text-cardtext2">Evil is Resurrected</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card7.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Warzone 2</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Warzone 2.0</p>
+                  <p class="font-noto text-sm text-cardtext2">Free for everyone</p>
+                  <p class="font-noto text-xs text-cardtext">Free-To-Play Action Shooter</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">Play For Free</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card8.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Special Subscription Offer</p>
+                  <p class="font-noto text-sm text-cardtext2">Includes access to World of Warcraft and Wrath of the Lich King Classic!</p>
+                  <p class="font-noto text-xs text-cardtext">Subscriptions</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-4">Learn More</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card9.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo III</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® III: Eternal Collection</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-12">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card10.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">Hearthstone®</p>
+                  <p class="font-noto text-xs text-cardtext">Strategy Card Game</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-20">Play For Free</p></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- end trending now -->
+    <!-- initialize most gifted -->
+    <div class="mt-16">
+        <div><p class="font-object text-2xl text-[#fff] pl-3">Most Gifted</p></div>
+        <div class="flex flex-row flex-wrap justify-center items-center gap-2 gap-y-4 mt-3">
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov before:content-['BETA'] before:text-[#fff] before:absolute before:top-2 before:left-2 before:bg-cardred before:rounded before:px-2 before:py-1 before:text-xs before:font-noto before:font-bold">
+                <figure><img src="./images/card1.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">DIABLO IV</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® IV: Ultimate Edition</p>
+                  <p class="font-noto text-sm text-cardtext2">Pre-purchase now for Early Access to the Open Beta. Early access begins March 17</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-7 font-bold">$99.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card2.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Dragonflight</p>
+                  <p class="font-noto text-xs text-cardtext">Massively Multiplayer RPG</p>
+                  
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $49.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card3.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Tavern Pass</p>
+                  <p class="font-noto text-sm text-cardtext2">Available through April 10, 2023</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 mt-14 font-bold">$19.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card4.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Modern Warfare II</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Modern Warfare® II - Vault Edition</p>
+                  <Play class="font-noto text-sm text-cardtext2">Play Multiplayer for FREE, until March 20th.</p>
+                  <p class="font-noto text-xs text-cardtext">Action Shooter</p>
+                </div>
+                <div class="flex flex-row items-start justify-between px-5 mt-9 mb-4"><p class="font-noto text-base text-cardgreen pt-3 font-bold leading-5">$74.99</p><div class="bg-cardgreen rounded w-14 h-10 p-2"><p class="font-noto text-[#000] text-base">-25%</p></div></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card5.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">March of the Lich King Packs</p>
+                  <p class="font-noto text-xs text-cardtext">Card Packs</p>
+                  <div class="h-20 w-2"></div>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold">From $2.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card6.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag6.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo II: Resurrected</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo II: Resurrected™</p>
+                  <p class="font-noto text-sm text-cardtext2">Evil is Resurrected</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card7.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag4.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Call of Duty: Warzone 2</p></div>
+                  <p class="font-object text-lg text-cardtext1">Call of Duty®: Warzone 2.0</p>
+                  <p class="font-noto text-sm text-cardtext2">Free for everyone</p>
+                  <p class="font-noto text-xs text-cardtext">Free-To-Play Action Shooter</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-16">Play For Free</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure><img src="./images/card8.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag2.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">World of Warcraft</p></div>
+                  <p class="font-object text-lg text-cardtext1">World of Warcraft®: Special Subscription Offer</p>
+                  <p class="font-noto text-sm text-cardtext2">Includes access to World of Warcraft and Wrath of the Lich King Classic!</p>
+                  <p class="font-noto text-xs text-cardtext">Subscriptions</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-4">Learn More</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card9.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag1.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Diablo III</p></div>
+                  <p class="font-object text-lg text-cardtext1">Diablo® III: Eternal Collection</p>
+                  <p class="font-noto text-xs text-cardtext">Action RPG</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-12">$39.99</p></div>
+            </div>
+            <div class="group card bg-card rounded basis-72 cursor-pointer hover:bg-cardhov">
+                <figure class="h-[170px] overflow-hidden"><img src="./images/card10.webp" alt="Shoes"/></figure>
+                <div class="card-body p-5 gap-0 group-hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-start gap-1"><img src="./images/cardtag3.svg" alt="1" class="w-7"><p class="font-object text-xs text-cardtext">Hearthstone</p></div>
+                  <p class="font-object text-lg text-cardtext1">Hearthstone®</p>
+                  <p class="font-noto text-xs text-cardtext">Strategy Card Game</p>
+                </div>
+                <div><p class="font-noto text-base text-cardtext1 pl-5 pb-8 font-bold mt-20">Play For Free</p></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- end most gifted -->
 
+
+
+
+
+
+
+
+
+
+    <!-- initialize uplink -->
+    <a href="#up"><div class="fixed bottom-10 right-10 rounded bg-body border-2 border-solid border-graybut  hover:outline hover:outline-2 hover:outline-grayline px-3 z-50"><svg width="24px" height="48px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false" role="presentation" viewBox="0 0 24 24" part="icon blz-icon">
+        <path d="M18.646 14.646a.5.5 0 0 1 0 .707l-.703.704a.5.5 0 0 1-.707 0L12 10.83l-5.236 5.227a.5.5 0 0 1-.707 0l-.703-.703a.5.5 0 0 1 0-.708l6.292-6.293a.5.5 0 0 1 .708 0l6.293 6.293Z"></path>
+      </svg></div></a>
+    <!-- end uplink -->
     <script>
         // lightmode
         document.querySelector("svg.swap-on").addEventListener("click",function(){
