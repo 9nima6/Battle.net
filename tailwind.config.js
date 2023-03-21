@@ -24,7 +24,10 @@ module.exports = {
       cardred: "var(--cardred)",
       divbut: "var(--divbut)",
       graybut: "var(--graybut)",
-      grayline: "var(--grayline)"
+      grayline: "var(--grayline)",
+      w99: "var(--w99)",
+      bluehov: "var(--bluehov)",
+      foottext: "var(--foottext)"
     },
     fontFamily:{
       "object":"object",

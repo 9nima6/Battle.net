@@ -16,7 +16,9 @@
         --blueline:#47A6FF;
         --card:#23252b;
         --cardtext:#ffffffB8;
+        --foottext:#ffffff80;
         --cardtext1:#ffffffD6;
+        --w99:#ffffff99;
         --cardtext2:#ffb400;
         --cardhov:#313339;
         --cardgreen:#6CDB00;
@@ -24,5 +26,6 @@
         --divbut:#111218;
         --graybut:#36383E;
         --grayline:#48494F;
+        --bluehov:#66C4FF;
     }
 }
